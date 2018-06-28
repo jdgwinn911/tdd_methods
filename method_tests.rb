@@ -7,7 +7,7 @@ class MethodMaking < Minitest::Test
     end
 
     def test_that_array_has_elements
-        assert_equal(["a", "b", "c"], join_array([],"abc"))
+        assert_equal(["a", "b", "c", "a - b - c"], join_array([],"abc"))
     end
 
     # def test_that_array_returns_string_from_each_arr_element
