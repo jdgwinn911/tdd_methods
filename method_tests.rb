@@ -14,8 +14,9 @@ class MethodMaking < Minitest::Test
         assert_equal("abc", join_array(["a", "b", "c"], "a b c"))
     end
 
-    # def test_that_hash_has_value
-    #     assert_equal({"a" => 100, "b" => 200, ["c" => 300], "d" => 400}, flatten_hash())
-    # end
+    def test_that_hash_has_value
+        assert_equal([1, "one", [2, "two"], 3, "three"], flatten_hash({1 => "one", 2 => [2, "two"], 3 => "three"}))
+
+    end
 
 end
