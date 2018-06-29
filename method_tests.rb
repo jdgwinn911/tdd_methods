@@ -15,8 +15,8 @@ class MethodMaking < Minitest::Test
     end
 
     def test_that_hash_has_value
-        assert_equal([1, "one", [2, "two"], 3, "three"], flatten_hash({1 => "one", 2 => [2, "two"], 3 => "three"}))
-
+        assert_equal([ "one", [2, "two"], "three"], flatten_hash({ 1 => "one", 2 => [2, "two"], 3 => "three"}))
     end
+
 
 end

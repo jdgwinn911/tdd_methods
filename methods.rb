@@ -11,5 +11,7 @@ end
 
 def flatten_hash(a2)
     a2
+    a2.values
 
+  p a2.values
 end   
