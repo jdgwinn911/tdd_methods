@@ -7,10 +7,18 @@ class MethodMaking < Minitest::Test
     end
 
     def test_that_array_has_elements
-        assert_equal(["a", "b", "c", "a - b - c"], join_array([],"abc"))
+        assert_equal(["a", "b", "c"], join_array(["a", "b", "c"], "a b c"))
     end
 
     def test_that_array_returns_string_from_arr_element
-        assert_equal(["a", "b", "c", "a - b - c"], join_array([], ""))
+        assert_equal("abc", join_array(["a", "b", "c"], "a b c"))
     end
+
+    # def test_that_array_has_been_converted_to_string
+    #     assert_equal
+
+    # def test_that_hash_has_value
+    #     assert_equal({"a" => 100, "b" => 200, ["c" => 300], "d" => 400}, flatten_hash())
+    # end
+
 end
