@@ -14,6 +14,10 @@ class MethodMaking < Minitest::Test
         assert_equal("abc", join_array(["a", "b", "c"], "a b c"))
     end
 
+    def test_that_array_returns_string_from_arr_element_1
+        assert_equal("abcd", join_array(["a", "b", "c" , "d"], "a b c d"))
+    end
+
     def test_that_hash_has_value
         assert_equal([ "one", [2, "two"], "three"], flatten_hash({ 1 => "one", 2 => [2, "two"], 3 => "three"}))
     end
